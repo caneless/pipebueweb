@@ -1,0 +1,145 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make sure the html and body cover the full height */
+html, body {
+    height: 100%; /* Full height */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text color */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+}
+
+/* Header styling */
+header {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 15px 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Navigation styling */
+nav {
+    position: relative; /* Relative positioning for menu */
+}
+
+/* Toggle checkbox for mobile */
+.menu-toggle {
+    display: none; /* Hide the default checkbox */
+}
+
+/* Navigation List styling */
+.nav-list {
+    display: flex; /* Display list items in a row */
+    list-style-type: none; /* No bullets */
+    padding: 0; /* No padding */
+    justify-content: center; /* Center the items */
+}
+
+/* Styling for each navigation link */
+.nav-list li {
+    margin: 10px 0; /* Øk margin mellom hvert <li> element */
+}
+
+.nav-list a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Add padding around links */
+    border-radius: 5px; /* Round corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover effect for navigation links */
+.nav-list a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
+}
+
+/* Hide the checkbox on desktop */
+#menu-toggle {
+    display: none; /* Hide the checkbox on desktop */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Hide the nav list by default */
+    .nav-list {
+        display: none; /* Initially hide the list */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Position relative to the nav */
+        top: 60px; /* Position below the header */
+        left: 0; /* Align left */
+        right: 0; /* Align right */
+        background-color: #333; /* Background color for dropdown */
+        z-index: 1000; /* Bring it in front of other elements */
+        border-radius: 5px; /* Round corners for dropdown */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+    }
+
+    /* Show the menu when the checkbox is checked */
+    #menu-toggle:checked + .menu-toggle + .nav-list {
+        display: flex; /* Show the menu */
+    }
+
+    /* Show the hamburger menu icon */
+    .menu-toggle {
+        display: block; /* Show hamburger icon on mobile */
+        cursor: pointer; /* Pointer cursor for interactivity */
+        font-size: 24px; /* Size of the hamburger icon */
+        color: white; /* White color for icon */
+        text-align: center; /* Center the icon */
+        margin: 10px; /* Margin around icon */
+    }
+
+    /* Styling for mobile navigation links */
+    .nav-list a {
+        padding: 15px; /* Increase padding for mobile */
+        font-size: 18px; /* Bigger text for better readability */
+        border-radius: 0; /* Square corners for mobile */
+        width: 100%; /* Full width for mobile buttons */
+        text-align: center; /* Center the text */
+    }
+
+    /* Add margin between <li> elements */
+    .nav-list li {
+        margin: 15px 0; /* Vertical margin between items */
+    }
+
+    /* Hover effect for mobile navigation links */
+    .nav-list a:hover {
+        background-color: rgba(255, 255, 255, 0.3); /* Lighter background on hover */
+    }
+}
+
+/* Main content area */
+main {
+    flex-grow: 1; /* Let main grow to fill available space */
+    padding: 0; /* Padding around content */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Padding for footer */
+    z-index: 1;
+}
+
+/* Footer text styling */
+footer p {
+    margin: 0; /* No margin */
+    font-size: 0.9em; /* Litt mindre fontstørrelse for å gjøre den kompakt */
+}
+
+/* For å sikre at det ikke er mellomrom mellom hero og footer */
+.hero,
+footer {
+    margin: 0; /* Ingen margin */
+    padding: 0; /* Ingen padding */
+}

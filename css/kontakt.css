@@ -1,0 +1,17 @@
+/* Contact section styling */
+.contact {
+    padding: 50px 20px; /* Polstring for kontakt-seksjonen */
+    background-color: #f9f9f9; /* Lys grå bakgrunn */
+    text-align: center; /* Senter tekst */
+}
+
+/* Title styling */
+.contact h2 {
+    margin-bottom: 30px; /* Margin under overskrift */
+    font-size: 2em; /* Størrelse på overskrift */
+}
+
+/* Contact info styling */
+.contact-info {
+    margin-top: 30px; /* Margin over kontaktinformasjon */
+}

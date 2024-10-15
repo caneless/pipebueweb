@@ -1,0 +1,43 @@
+/* Services section styling */
+.services {
+    padding: 50px 20px; /* Polstring for tjenester-seksjonen */
+    background-color: #f9f9f9; /* Lys grå bakgrunn */
+    text-align: center; /* Senter tekst */
+}
+
+/* Title styling */
+.services h2 {
+    margin-bottom: 30px; /* Margin under overskrift */
+    font-size: 2em; /* Størrelse på overskrift */
+}
+
+/* Service item styling */
+.service-item {
+    background-color: white; /* Hvit bakgrunn for tjeneste-elementer */
+    border: 1px solid #ccc; /* Lys grå ramme */
+    border-radius: 8px; /* Runde hjørner */
+    padding: 20px; /* Polstring */
+    margin: 15px 0; /* Margin mellom tjeneste-elementene */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skygge for dybde */
+}
+
+/* Service image */
+.service-item img {
+    width: 100%; /* Ensure image covers the full width */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 3px solid #333; /* Optional border under the image */
+}
+
+/* Service heading */
+.service-item h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Service description */
+.service-item p {
+    padding: 0 10px 20px;
+    font-size: 1rem;
+    color: #666;
+}
