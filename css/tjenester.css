@@ -23,7 +23,7 @@
 
 /* Service image */
 .service-item img {
-    width: 100%; /* Ensure image covers the full width */
+    width: 50%; /* Ensure image covers the full width */
     height: auto; /* Maintain aspect ratio */
     border-bottom: 3px solid #333; /* Optional border under the image */
 }
